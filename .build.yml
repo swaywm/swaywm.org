@@ -1,0 +1,15 @@
+image: archlinux
+oauth: pages.sr.ht/PAGES:RW
+sources:
+  - https://github.com/swaywm/sway.git#gh-pages
+environment:
+  site: swaywm.org
+packages:
+  - jekyll
+tasks:
+  - build: |
+      cd sway/
+      jekyll build
+      curl -o _site/assets/intro.webm https://l.sr.ht/lJ9C.webm
+  - deploy: |
+      tar -cvz -C sway/_site/ . | acurl -f https://pages.sr.ht/publish/$site -Fcontent=@-
