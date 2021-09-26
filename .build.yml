@@ -1,7 +1,7 @@
 image: archlinux
 oauth: pages.sr.ht/PAGES:RW
 sources:
-  - https://github.com/swaywm/sway.git#gh-pages
+  - https://github.com/swaywm/swaywm.org.git
 environment:
   site: swaywm.org
 packages:
