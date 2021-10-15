@@ -12,4 +12,5 @@ tasks:
       jekyll build
       curl -o _site/assets/intro.webm https://l.sr.ht/lJ9C.webm
   - deploy: |
+      [ -n "$GITHUB_PR_NUMBER" ] && complete-build
       tar -cvz -C swaywm.org/_site/ . | acurl -f https://pages.sr.ht/publish/$site -Fcontent=@-
