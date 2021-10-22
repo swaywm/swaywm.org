@@ -1,6 +1,3 @@
----
----
-
 * {
   box-sizing: inherit;
 }
@@ -43,11 +40,11 @@ body {
   padding-top: 0.25rem;
   text-decoration: none;
   white-space: nowrap;
+}
 
-  &,
-  &:hover {
-    color: rgba(0, 0, 0, 0.9);
-  }
+.navbar-brand,
+.navbar-brand:hover {
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar {
@@ -57,11 +54,6 @@ body {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   position: relative;
-
-  @media (min-width: 992px) {
-    align-items: center;
-    flex-direction: row;
-  }
 }
 
 .row {
@@ -69,7 +61,24 @@ body {
   flex-wrap: wrap;
 }
 
+.nav-link {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+  display: block;
+  padding: 0.5em 0.5rem 0.5rem 0;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 992px) {
+  .navbar {
+    align-items: center;
+    flex-direction: row;
+  }
+
   .left-column {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
@@ -81,42 +90,21 @@ body {
     max-width: 66.6666666666%;
     padding-left: 10px;
   }
-}
 
-
-.nav-link {
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline;
-  display: block;
-  padding: 0.5em 0.5rem 0.5rem 0;
-
-  &:hover,
-  &:focus {
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  @media (min-width: 992px) {
+  .nav-link {
     display: block;
     padding-left: 0.5rem;
   }
 }
 
 .main a {
-  color: darken(#014c8c, 10);
+  color: #013159;
   text-decoration: underline;
 }
 
 video {
   max-width: 100%;
   box-shadow: 0 0 3px 3px #444;
-}
-
-.text-center {
-  text-align: center;
-}
-
-hr {
-  border-color: white;
 }
 
 #logo {
