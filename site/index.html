@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="master.css" />
+    <link rel="icon" href="favicon.png" />
+    <title>Sway</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a class="navbar-brand" href="/">Sway</a>
+        <a class="nav-link" href="https://github.com/swaywm/sway/releases">Releases ≫</a>
+        <a class="nav-link" href="https://github.com/swaywm/sway">Source Code ≫</a>
+        <a class="nav-link" href="https://github.com/swaywm/sway/wiki">Wiki ≫</a>
+        <a class="nav-link" href="https://web.libera.chat/gamja/?channels=#sway">Support Chat ≫</a>
+      </nav>
+      <div class="main">
+        <div class="row">
+          <div class="left-column">
+            <h1><img src="logo.png" id="logo" alt="Sway" /></h1>
+            <p>
+              Sway is a tiling Wayland compositor and a drop-in replacement for the
+              <a href="http://i3wm.org/">i3 window manager</a> for X11. It works
+              with your existing i3 configuration and supports most of i3's
+              features, plus a few extras.
+            </p>
+            <p>
+              Sway allows you to arrange your application windows <em>logically</em>,
+              rather than <em>spatially</em>. Windows are arranged into a grid by
+              default which maximizes the efficiency of your screen and can be
+              quickly manipulated using only the keyboard.
+            </p>
+            <p>
+              Sway is documented via manpages. For a list of available manpages, refer
+              to <code>man -k sway</code>.
+            </p>
+          </div>
+          <div class="right-column">
+            <video controls>
+              <source src="intro.webm" type="video/webm">
+              <track src="subtitles/intro.vtt" kind="captions" srclang="en" label="English">
+              <track src="subtitles/intro-it_IT.vtt" kind="captions" srclang="it" label="Italiano">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 1rem;">
+          <p>
+            We also maintain the <a href="https://github.com/swaywm/wlroots">wlroots</a>
+            project to provide a modular basis for Sway and other Wayland compositors
+            to build upon, and we <a href="https://github.com/swaywm/wlr-protocols">
+            publish standards</a> for interoperable Wayland desktops.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
