@@ -103,8 +103,19 @@ body {
 }
 
 video {
-  max-width: 100%;
+  max-width: 50%;
   box-shadow: 0 0 3px 3px #444;
+  margin-left: 1rem;
+  float: right;
+}
+
+@media (max-width: 640px) {
+  video {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
 }
 
 #logo {
