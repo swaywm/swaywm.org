@@ -72,6 +72,7 @@ body {
 
 .main {
   display: flex;
+  align-items: center;
   padding: 1rem;
   flex-direction: row-reverse;
   max-width: 1900px;
