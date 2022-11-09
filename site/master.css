@@ -1,14 +1,13 @@
 * {
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
   height: 100%;
 }
 
 body {
-  background: linear-gradient(to bottom right, #75d3e8, #3c84ac);
+  background: linear-gradient(to bottom right, #3c88ac, #3c84ac);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,8 +24,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
   position: relative;
   width: 960px;
 }
@@ -40,6 +39,7 @@ body {
   padding-top: 0.25rem;
   text-decoration: none;
   white-space: nowrap;
+  text-align:center;
 }
 
 .navbar-brand,
@@ -51,9 +51,13 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   padding: 0.5rem 1rem;
   position: relative;
+  background-color:#75d3e8;
+  color:#121212;
+  border-radius:10px;
+  margin-top:5px;
 }
 
 .row {
@@ -101,6 +105,12 @@ body {
   color: #013159;
   text-decoration: underline;
 }
+.main {
+  border-radius: 10px;
+  color: #232323;
+  background-color: #75d3e8;
+  padding: 5px
+}
 
 video {
   max-width: 50%;
@@ -125,11 +135,11 @@ video {
 }
 
 code {
-  font-family: monospace;
+  font-family: poorstory;
   padding: 0.2rem 0.4rem;
   font-size: 90%;
-  color: #bd4147;
-  background-color: #f7f7f9;
+  color: #FF4040;
+  background-color: #AFA137;
   border-radius: 0.25rem;
 }
 
@@ -142,4 +152,12 @@ h1 {
   margin: 0 0 0.5rem 0;
   font-size: 2.5rem;
   line-height: 1.1;
+}
+.end_div{
+  border-radius:10px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #75d3e8;
+}br{
+	margin:4px
 }
