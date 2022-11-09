@@ -9,12 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" style="text-align: center;">
         <a class="navbar-brand" href="/">Sway</a>
+		<br/>
         <a class="nav-link" href="https://github.com/swaywm/sway/releases">Releases ≫</a>
         <a class="nav-link" href="https://github.com/swaywm/sway">Source Code ≫</a>
         <a class="nav-link" href="https://github.com/swaywm/sway/wiki">Wiki ≫</a>
         <a class="nav-link" href="https://web.libera.chat/gamja/?channels=#sway">Support Chat ≫</a>
+		<a class="nav-link" href="https://github.com/swaywm/">Github Project</a>
+		<a class="nav-link" href="https://github.com/swaywm/swaywm.org">Source Code Site</a>
+		<a class="nav-link" href="https://en.wikipedia.org/wiki/Sway_(window_manager)">Wikipedia Sway</a>
       </nav>
       <div class="main">
         <video controls>
@@ -23,7 +27,7 @@
           <track src="subtitles/intro-it_IT.vtt" kind="captions" srclang="it" label="Italiano">
           <p>Your browser does not support HTML5 video.</p>
         </video>
-        <h1><img src="logo.png" id="logo" alt="Sway" /></h1>
+        <h4><img src="logo.png" id="logo" alt="Sway" /></h4>
         <p>
           Sway is a tiling Wayland compositor and a drop-in replacement for the
           <a href="http://i3wm.org/">i3 window manager</a> for X11. It works
@@ -47,6 +51,50 @@
           publish standards</a> for interoperable Wayland desktops.
         </p>
       </div>
+	 <div class=end_div style="text-align: center;">
+		 <h4 align=center >Pop distress working on Sway.</h4>
+	     <p>
+		     <a href="https://manjaro-sway.download/">MANJARO SWAY</a>
+			 <a href="https://ubuntusway.com">UBUNTU SWAY REMIX</a>
+		 </p>
+	 </div>
+	 <div class=end_div style="text-align: center;">
+	     <h4 align=center>whats download Sway WM ???</h4>
+		 <p>
+			 in Arch Base disterss :<br/>  
+			 <code>sudo pacman -Syu</code>
+			 <code>sudo pacman -S sway swaybg</code>
+		 </p>
+		 <p>
+		     source code :<br/>
+			 Install dependencies:<br/>
+
+			 meson *,
+			 wlroots,
+			 wayland,
+              wayland-protocols *,
+              pcre2,
+              json-c,
+			 pango,
+			 cairo,
+			 gdk-pixbuf2 (optional: system tray),
+              scdoc (optional: man pages) *,
+			 git (optional: version info) *,
+
+			 <br/>* Compile-time dep,
+
+              Run these commands:<br/>
+			 <code>git clone https://github.com/swaywm/sway</code></br>
+			 <code>meson build/</code><br/>
+			 <code>ninja -C build/</code><br/>
+			 <code>sudo ninja -C build/ install</code><br/>
+			 On systems without logind nor seatd, you need to suid the sway binary:
+			 <br/><code>sudo chmod a+s /usr/local/bin/sway</code>
+		 </p>
+	 </div>
+	 <div class="end_div" style="margin-bottom:10px">
+	     <h2 align=center>GNU IS NOT UNIX</h2>
+	 </div>
     </div>
   </body>
 </html>
