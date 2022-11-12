@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom right, #3c88ac, #3c84ac);
+  background: linear-gradient(to bottom right, #75d3e8, #3c84ac);
+  /*background-color:#ff4040;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -44,7 +45,7 @@ body {
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: rgba(0, 0, 0, 0.9);
+  color: #121212;/*rgba(0, 0, 0, 0.9);*/
 }
 
 .navbar {
@@ -54,8 +55,8 @@ body {
   margin-bottom: 10px;
   padding: 0.5rem 1rem;
   position: relative;
-  background-color:#75d3e8;
-  color:#121212;
+  background-color:#AFA137;
+  color:#ff4040;
   border-radius:10px;
   margin-top:5px;
 }
@@ -138,8 +139,8 @@ code {
   font-family: poorstory;
   padding: 0.2rem 0.4rem;
   font-size: 90%;
-  color: #FF4040;
-  background-color: #AFA137;
+  color: #121212;
+  background-color: #68751C;
   border-radius: 0.25rem;
 }
 
@@ -157,7 +158,8 @@ h1 {
   border-radius:10px;
   padding: 5px;
   margin-top: 10px;
-  background-color: #75d3e8;
+  background-color: #75d3e9;
+  /*background: linear-gradient(to bottom right, #75d3e8, #3c84ac);*/
 }br{
-	margin:4px
+	margin:5px
 }
