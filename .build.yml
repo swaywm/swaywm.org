@@ -9,5 +9,6 @@ tasks:
       cd swaywm.org/
       curl --fail -o site/intro.webm https://l.sr.ht/lJ9C.webm
   - deploy: |
+      cd swaywm.org/
       [ "$(git rev-parse origin/master)" = "$(git rev-parse HEAD)" ] || complete-build
-      tar -cvz -C swaywm.org/site/ . | hut pages publish -d swaywm.org /dev/stdin
+      tar -cvz -C site/ . | hut pages publish -d swaywm.org /dev/stdin
