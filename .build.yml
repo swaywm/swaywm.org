@@ -7,7 +7,7 @@ packages:
 tasks:
   - build: |
       cd swaywm.org/
-      curl -o site/intro.webm https://l.sr.ht/lJ9C.webm
+      curl --fail -o site/intro.webm https://l.sr.ht/lJ9C.webm
   - deploy: |
       [ "$(git rev-parse origin/master)" = "$(git rev-parse HEAD)" ] || complete-build
       tar -cvz -C swaywm.org/site/ . | hut pages publish -d swaywm.org /dev/stdin
