@@ -11,4 +11,4 @@ tasks:
   - deploy: |
       cd swaywm.org/
       [ "$(git rev-parse origin/master)" = "$(git rev-parse HEAD)" ] || complete-build
-      tar -cvz -C site/ . | hut pages publish -d swaywm.org /dev/stdin
+      hut pages publish -d swaywm.org site/
