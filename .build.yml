@@ -1,13 +1,33 @@
-image: archlinux
+image: alpine/edge
 oauth: pages.sr.ht/PAGES:RW
 sources:
   - https://github.com/swaywm/swaywm.org
 packages:
   - hut
+  - mandoc
+  - sway-doc
 tasks:
   - build: |
       cd swaywm.org/
       curl --fail -o site/intro.webm https://l.sr.ht/lJ9C.webm
+  - man: |
+      man2html() {
+        # $1: section
+        # $2: name
+        gunzip -c /usr/share/man/man$1/$2.$1.gz | mandoc -T html -O style=man-style.css |
+          sed -E 's,<b>(sway[a-z-]*)</b>\(([0-9])\),<a href="\1.\2.html"><b>\1</b>(\2)</a>,g' > $2.$1.html
+      }
+      cd swaywm.org/site/man/
+      man2html 1 sway
+      man2html 1 swaymsg
+      man2html 1 swaynag
+      man2html 5 sway-bar
+      man2html 5 sway-input
+      man2html 5 sway-output
+      man2html 5 sway
+      man2html 5 swaynag
+      man2html 7 sway-ipc
+      man2html 7 swaybar-protocol
   - deploy: |
       cd swaywm.org/
       [ "$(git rev-parse origin/master)" = "$(git rev-parse HEAD)" ] || complete-build

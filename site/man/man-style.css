@@ -1,0 +1,66 @@
+/* From: https://git.sr.ht/~emersion/soju/tree/website */
+
+body {
+  max-width: 88ex;
+  padding: 2ex 4ex;
+
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.head,
+.foot {
+  width: 100%;
+  color: #999;
+}
+
+.foot {
+  margin-top: 3ex;
+}
+
+.head-vol {
+  text-align: center;
+}
+
+.head-rtitle {
+  text-align: right;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+p {
+  text-align: justify;
+}
+.Bd-indent {
+  padding-left: 4ex;
+}
+
+pre {
+  color: #434241;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #18191a;
+    color: #ffffff;
+  }
+
+  .head,
+  .foot {
+    color: #cac0b3;
+  }
+
+  a {
+    color: #3daeff;
+  }
+
+  pre {
+    color: #e4ded3;
+  }
+}
